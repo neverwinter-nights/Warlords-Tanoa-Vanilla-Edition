@@ -67,3 +67,9 @@ While the fast travel is limited to helipads and airfields, while deadly weapons
  [*] CBA_A3 (Required by Enhanced Movement Rework).
 	https://steamcommunity.com/sharedfiles/filedetails/?id=450814997&searchtext=cba
 [/list]
+
+
+[h1]Source Code[/h1]
+
+Source code and PBO file are available at the GitHub:
+https://github.com/neverwinter-nights/Warlords-Tanoa-Vanilla-Edition

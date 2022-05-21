@@ -665,16 +665,16 @@ class CfgWLRequisitionPresets
 //					requirements[] = {};
 //				};
 
-				// Huron Cargo Container.
+				// Empty Cargo Container.
 				class plp_ct_ContPlainOlive
 				{
-					cost = 100;
+					cost = 150;
 					requirements[] = {};
 				};
 				// Huron Cargo Container.
 				class B_Slingload_01_Cargo_F
 				{
-					cost = 150;
+					cost = 200;
 					requirements[] = {};
 				};
 				// Huron Medical Container.
@@ -1169,16 +1169,16 @@ class CfgWLRequisitionPresets
 //					requirements[] = {};
 //				};
 
-				// Huron Cargo Container.
+				// Empty Cargo Container.
 				class plp_ct_ContPlainOlive
 				{
-					cost = 100;
+					cost = 150;
 					requirements[] = {};
 				};
 				// Huron Cargo Container.
 				class B_Slingload_01_Cargo_F
 				{
-					cost = 150;
+					cost = 200;
 					requirements[] = {};
 				};
 				// Huron Medical Container.

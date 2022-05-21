@@ -1,0 +1,1211 @@
+author = "McArcher";
+onLoadName		= "Warlords Tanoa: Vanilla";
+onLoadMission	= "Warlords Tanoa: Vanilla Edition";
+loadScreen		= "images\load_screen_1024x512.paa";
+briefingName = "Warlords Tanoa: Vanilla Edition";
+overviewText="An extended tropical variant of the Warlords mission. Uses vanilla vehicles.";
+overviewTextLocked="An extended tropical variant of the Warlords mission. Uses vanilla vehicles.";
+overViewPicture="images\load_screen_1024x512.paa";
+
+class Params
+{
+	class BIS_WLStartingDaytime
+	{
+		title = $STR_A3_combatpatrol_params_1;
+		values[] = { 100, -6, 0, 6, -12 };
+		texts[] = { $STR_A3_WL_param37_value1, $STR_A3_combatpatrol_params_3, $STR_A3_MP_COOP_m03_noon, $STR_A3_MP_COOP_m03_evening, $STR_A3_combatpatrol_params_6 };
+		default = 100;
+	};
+	class BIS_WLTimeAcceleration
+	{
+		title = $STR_A3_WL_param2_title;
+		values[] = { 1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24 };
+		texts[] = { $STR_special_none, "x2", "x4", "x6", "x8", "x10", "x12", "x14", "x16", "x18", "x20", "x22", "x24" };
+		default = 1;
+	};
+	class BIS_WLProgress
+	{
+		title = $STR_A3_WL_param1_title;
+		values[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
+		texts[] = {
+			$STR_special_none,
+			$STR_A3_WL_forcedProgress_perc_1,
+			$STR_A3_WL_forcedProgress_perc_2,
+			$STR_A3_WL_forcedProgress_perc_3,
+			$STR_A3_WL_forcedProgress_perc_4,
+			$STR_A3_WL_forcedProgress_perc_5,
+			$STR_A3_WL_forcedProgress_perc_6,
+			$STR_A3_WL_forcedProgress_perc_7,
+			$STR_A3_WL_forcedProgress_perc_8,
+			$STR_A3_WL_forcedProgress_perc_9,
+			$STR_A3_WL_forcedProgress_perc_10,
+			$STR_A3_WL_forcedProgress_perc_11,
+			$STR_A3_WL_forcedProgress_perc_12
+		};
+		default = 1;
+	};
+	class BIS_WLFTEnabled
+	{
+		title = $STR_A3_fastravel1;
+		values[] = {1, 0, 2, 3, 4};
+		texts[] = { $STR_A3_WL_param3_value1, $STR_A3_WL_param3_value2, $STR_A3_WL_param3_value3, $STR_A3_WL_param3_value4, $STR_A3_WL_param3_value5 };
+		default = 1;
+	};
+	class BIS_WLScanEnabled
+	{
+		title = $STR_A3_WL_param4_title;
+		values[] = { 1, 0 };
+		texts[] = { $STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED };
+		default = 0;
+	};
+	class BIS_WLVotingResetEnabled
+	{
+		title = $STR_A3_WL_menu_resetvoting;
+		values[] = { 1, 0 };
+		texts[] = { $STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED };
+		default = 1;
+	};
+	class BIS_WLAIVoting
+	{
+		title = $STR_A3_WL_param5_title;
+		values[] = { 1, 0 };
+		texts[] = { $STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED };
+		default = 0;
+	};
+	class BIS_WLArsenalEnabled
+	{
+		title = $STR_A3_Arsenal;
+		values[] = { 1, 0 };
+		texts[] = { $STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED };
+		default = 1;
+	};
+	class BIS_WLMarkersTransparency
+	{
+		title = $STR_A3_WL_param7_title;
+		values[] = { 4, 3, 2, 1, 0 };
+		texts[] = { $STR_A3_WL_param7_value1, $STR_A3_WL_markerAlpha_perc_1, $STR_A3_WL_markerAlpha_perc_2, $STR_A3_WL_markerAlpha_perc_3, $STR_A3_WL_param7_value2 };
+		default = 0;
+	};
+	class BIS_WLPlayersTransparency
+	{
+		title = $STR_A3_WL_param8_title;
+		values[] = { 4, 3, 2, 1, 0 };
+		texts[] = { $STR_A3_WL_param7_value1, $STR_A3_WL_markerAlpha_perc_1, $STR_A3_WL_markerAlpha_perc_2, $STR_A3_WL_markerAlpha_perc_3, $STR_A3_WL_param7_value2 };
+		default = 0;
+	};
+	class BIS_WLFatigueEnabled
+	{
+		title = $STR_A3_fatigue1;
+		values[] = { 1, 0 };
+		texts[] = { $STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED };
+		default = 1;
+	};
+	class BIS_WLMusic
+	{
+		title = $STR_A3_rscattributemusic_title;
+		values[] = { 1, 0 };
+		texts[] = { $STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED };
+		default = 1;
+	};
+	class BIS_WLVoice
+	{
+		title = $STR_A3_orange_faction_idap_cfgidentities_expo_name;
+		values[] = { 1, 0 };
+		texts[] = { $STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED };
+		default = 1;
+	};
+	class BIS_WLStartCP
+	{
+		title = $STR_A3_WL_param12_title;
+		values[] = { 0, 100, 250, 500, 1000, 2500, 5000 };
+		texts[] = { "0", "100", "250", "500", "1000", "2500", "5000" };
+		default = 250;
+	};
+	class BIS_WLCPMultiplier
+	{
+		title = $STR_A3_WL_param13_title;
+		values[] = { 1, 2 };
+		texts[] = { "1x", "2x" };
+		default = 1;
+	};
+	class BIS_WLVotingTimeout
+	{
+		title = $STR_A3_WL_param14_title;
+		values[] = { 5, 10, 15, 20, 25, 30 };
+		texts[] = { "5", "10", "15", "20", "25", "30" };
+		default = 15;
+	};
+	class BIS_WLVehicleSpan
+	{
+		title = $STR_A3_WL_param15_title;
+		values[] = { 900, 1800, 3600, 5400, 7200, 1000000 };
+		texts[] = { "15", "30", "60", "90", "120", $STR_A3_WL_param15_value1 };
+		default = 1000000;
+	};
+};
+
+class CfgWLAssetCostOverride
+{
+	//B_Soldier_F = 50;		// --- example asset classname
+	FundsTransfer = 5;		// --- funds transfer
+	Airdrop = 25;			// --- airdrop
+	// N.B. Airdrop to own sector is x1, to your coordinates is x40.
+	FastTravel = 1000;		// Fast travel to a contested sector.
+	Scan = 500;				// --- sector scan
+	ResetVoting = 1000;		// --- voting reset
+	
+	LastLoadout = 100;		// --- last loadout
+	Arsenal = 500;			// --- arsenal
+};
+
+class CfgWLRequisitionPresets
+{
+	class TanoaWLAssetList // --- class name used in the Init module
+	{
+		class WEST // --- assets available for BLUFOR
+		{
+			class Infantry
+			{
+				// Rifleman.
+				class B_T_Soldier_F			// --- Asset class name
+				{
+					cost = 100;				// --- Command Points required
+					// --- dispositions required:
+					//	"A" = airstrip, 
+					//	"H" = helipad, 
+					//	"W" = water (harbor).
+					requirements[] = {};	
+				};
+				// Crewman.
+				class B_T_Crew_F
+				{
+					cost = 100;
+					requirements[] = {};
+				};
+				// Helicopter Pilot.
+				class B_T_Helipilot_F
+				{
+					cost = 100;
+					requirements[] = {};
+				};
+				// Grenadier.
+				class B_T_Soldier_GL_F
+				{
+					cost = 125;
+					requirements[] = {};
+				};
+				// Combat Life Saver.
+				class B_T_Medic_F
+				{
+					cost = 125;
+					requirements[] = {};
+				};
+				// Autorifleman.
+				class B_T_Soldier_AR_F
+				{
+					cost = 150;
+					requirements[] = {};
+				};
+				// Ammo Bearer.
+				class B_T_Soldier_A_F
+				{
+					cost = 150;
+					requirements[] = {};
+				};
+				// Marksman.
+				class B_T_soldier_M_F // s.
+				{
+					cost = 150;
+					requirements[] = {};
+				};
+				// Repair Specialist.
+				class B_T_Soldier_Repair_F
+				{
+					cost = 200;
+					requirements[] = {};
+				};
+				// Heavy Gunner.
+				class B_HeavyGunner_F // Desert. No Tropic Variant !
+				{
+					cost = 200;
+					requirements[] = {};
+				};
+				// Rifleman (AT).
+				class B_T_Soldier_LAT_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Rifleman (Light AT).
+				class B_T_Soldier_LAT2_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Missile Specialist (AT).
+				class B_T_Soldier_AT_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Missile Specialist (AA).
+				class B_T_Soldier_AA_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Sharpshooter.
+				class B_Sharpshooter_F // Desert. No Tropic Variant !
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Sniper.
+				class B_T_Sniper_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+			};
+			class Vehicles
+			{
+				// HEMTT (Flatbed).
+				class B_T_Truck_01_flatbed_F
+				{
+					cost = 500; // 500+0.
+					requirements[] = {};
+				};
+				// HEMTT (Passanger, Open).
+				class B_T_Truck_01_transport_F
+				{
+					cost = 600;
+					requirements[] = {};
+				};
+				// HEMTT (Medical).
+				class B_T_Truck_01_medical_F
+				{
+					cost = 750; // 500+250.
+					requirements[] = {};
+				};
+				// HEMTT (Fuel).
+				class B_T_Truck_01_fuel_F
+				{
+					cost = 800; // 500+300.
+					requirements[] = {};
+				};
+				// HEMTT (Repair).
+				class B_T_Truck_01_Repair_F
+				{
+					cost = 1500; // 500+1000.
+					requirements[] = {};
+				};
+				// HEMTT (Ammo).
+				class B_T_Truck_01_ammo_F
+				{
+					cost = 3000; // 500+2500.
+					requirements[] = {};
+				};
+				
+				// CRV-6e Bobcat.
+				class B_T_APC_Tracked_01_CRV_F
+				{
+					cost = 3500;
+					requirements[] = {};
+				};
+				
+				// Quad Bike.
+				class B_T_Quadbike_01_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Prowler (Unarmed).
+				class B_T_LSV_01_unarmed_F
+				{
+					cost = 300;
+					requirements[] = {};
+				};
+				// Prowler (HMG).
+				class B_T_LSV_01_armed_F
+				{
+					cost = 750;
+					requirements[] = {};
+				};
+				// Prowler (AT).
+				class B_T_LSV_01_AT_F
+				{
+					cost = 1250;
+					requirements[] = {};
+				};
+				
+				// MATV (Unarmed).
+				class B_T_MRAP_01_F
+				{
+					cost = 800;
+					requirements[] = {};
+				};
+				// MATV (HMG).
+				class B_T_MRAP_01_hmg_F
+				{
+					cost = 1600;
+					requirements[] = {};
+				};
+				// MATV (GMG).
+				class B_T_MRAP_01_gmg_F
+				{
+					cost = 1800;
+					requirements[] = {};
+				};
+				
+				// AMV-7 Marshall.
+				class B_T_APC_Wheeled_01_cannon_F
+				{
+					cost = 4000;
+					requirements[] = {};
+				};
+				// IFV-6c Panther.
+				class B_T_APC_Tracked_01_rcws_F
+				{
+					cost = 4500;
+					requirements[] = {};
+				};
+				// IFV-6a Cheetah.
+				class B_T_APC_Tracked_01_AA_F
+				{
+					cost = 5500;
+					requirements[] = {};
+				};
+				// Slammer.
+				class B_T_MBT_01_cannon_F
+				{
+					cost = 9500;
+					requirements[] = {};
+				};
+				// Slammer Up.
+				class B_T_MBT_01_TUSK_F
+				{
+					cost = 10000;
+					requirements[] = {};
+				};
+				// Scorcher.
+				class B_T_MBT_01_arty_F
+				{
+					cost = 13000;
+					requirements[] = {};
+				};
+			};
+			class Aircraft
+			{
+				// Caesar BTT.
+				class C_Plane_Civil_01_F
+				{
+					cost = 1000;
+					requirements[] = { "A" };
+				};
+				// MH-9.
+				class B_Heli_Light_01_F
+				{
+					cost = 1250;
+					requirements[] = { "H" };
+				};
+				// AH-9.
+				class B_Heli_Light_01_dynamicLoadout_F
+				{
+					cost = 2500;
+					requirements[] = { "H" };
+				};
+				// UH-80.
+				class B_Heli_Transport_01_F
+				{
+					cost = 2750;
+					requirements[] = { "H" };
+				};
+				// CH-67 (Unarmed)
+				class B_Heli_Transport_03_unarmed_F
+				{
+					cost = 4000;
+					requirements[] = { "H" };
+				};
+				// CH-67.
+				class B_Heli_Transport_03_F
+				{
+					cost = 4500;
+					requirements[] = { "H" };
+				};
+				// AH-99.
+				class B_Heli_Attack_01_dynamicLoadout_F
+				{
+					cost = 6000;
+					requirements[] = { "H" };
+				};
+				// V-44 (Infantry).
+				class B_T_VTOL_01_infantry_F
+				{
+					cost = 7000;
+					requirements[] = { "H" };
+				};
+				// V-44 (Cargo).
+				class B_T_VTOL_01_vehicle_F
+				{
+					cost = 7000;
+					requirements[] = { "H" };
+				};
+				// V-44 (Armed).
+				class B_T_VTOL_01_armed_F
+				{
+					cost = 7500;
+					requirements[] = { "H" };
+				};
+				// A-164 Wipeout.
+				class B_Plane_CAS_01_dynamicLoadout_F
+				{
+					cost = 25000;
+					requirements[] = { "A" };
+				};
+				// F/A-181 Black Wasp II.
+				class B_Plane_Fighter_01_F
+				{
+					cost = 35000;
+					requirements[] = { "A" };
+				};
+				// Darter.
+				class B_UAV_01_F
+				{
+					cost = 200;
+					requirements[] = {};
+				};
+				// Pelican.
+				class B_UAV_06_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// MQ-4A Greyhawk.
+				class B_UAV_02_dynamicLoadout_F
+				{
+					cost = 3500;
+					requirements[] = { "A" };
+				};
+				// Sentinel.
+				class B_UAV_05_F
+				{
+					cost = 26000;
+					requirements[] = { "A" };
+				};
+			};
+			class Naval
+			{
+				class B_T_Boat_Transport_01_F
+				{
+					cost = 50;
+					requirements[] = { "W" };
+				};
+				class C_Scooter_Transport_01_F
+				{
+					cost = 150;
+					requirements[] = { "W" };
+				};
+				class C_Boat_Transport_02_F
+				{
+					cost = 200;
+					requirements[] = { "W" };
+				};
+				class C_Boat_Civil_01_F
+				{
+					cost = 300;
+					requirements[] = { "W" };
+				};
+				class B_T_Boat_Armed_01_minigun_F
+				{
+					cost = 750;
+					requirements[] = { "W" };
+				};
+				class B_SDV_01_F
+				{
+					cost = 900;
+					requirements[] = { "W" };
+				};
+			};
+			class Defences
+			{
+				// Sandbag (Round). -- Is BUGGED by B.I.S.
+//				class Land_BagFence_01_round_green_F
+//				{
+//					cost = 10;
+//					requirements[] = {};
+//				};
+				// Sandbag (Long).
+				class Land_BagFence_01_long_green_F
+				{
+					cost = 10;
+					requirements[] = {};
+				};
+				// Sandbag (Short).
+				class Land_BagFence_01_short_green_F
+				{
+					cost = 5;
+					requirements[] = {};
+				};
+				// Sandbag (Corner). -- Is BUGGED by B.I.S.
+//				class Land_BagFence_01_corner_green_F
+//				{
+//					cost = 5;
+//					requirements[] = {};
+//				};
+				// Mk30 HMG.
+				class B_HMG_01_high_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Mk32 GMG.
+				class B_GMG_01_high_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// AT.
+				class B_T_Static_AT_F
+				{
+					cost = 500;
+					requirements[] = {};
+				};
+				// AA.
+				class B_T_Static_AA_F
+				{
+					cost = 500;
+					requirements[] = {};
+				};
+				// Mortar.
+				class B_T_Mortar_01_F
+				{
+					cost = 2000;
+					requirements[] = {};
+				};
+				// Radar.
+				class B_Radar_System_01_F
+				{
+					cost = 5000;
+					requirements[] = {};
+				};
+				// Defender.
+				class B_SAM_System_03_F
+				{
+					cost = 20000;
+					requirements[] = {};
+				};
+			};
+			class Gear
+			{
+				// Uniforms.
+				class Box_NATO_Uniforms_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Support.
+				class Box_NATO_Support_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Equipment.
+				class Box_NATO_Equip_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Basic Ammo.
+				class Box_NATO_Ammo_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Grenades.
+				class Box_NATO_Grenades_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Basic Weapons.
+				class Box_NATO_Wps_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Explosives.
+				class Box_NATO_AmmoOrd_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Launchers.
+				class Box_NATO_WpsLaunch_F
+				{
+					cost = 75;
+					requirements[] = {};
+				};
+				// Special Weapons.
+				class Box_NATO_WpsSpecial_F
+				{
+					cost = 75;
+					requirements[] = {};
+				};
+				// Supply Box.
+				class B_supplyCrate_F
+				{
+					cost = 75;
+					requirements[] = {};
+				};
+
+				// Vehicle Ammo.
+//				class Box_NATO_AmmoVeh_F
+//				{
+//					cost = 2000;
+//					requirements[] = {};
+//				};
+
+				// Huron Cargo Container.
+				class plp_ct_ContPlainOlive
+				{
+					cost = 100;
+					requirements[] = {};
+				};
+				// Huron Cargo Container.
+				class B_Slingload_01_Cargo_F
+				{
+					cost = 150;
+					requirements[] = {};
+				};
+				// Huron Medical Container.
+				class B_Slingload_01_Medevac_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Huron Fuel Container.
+				class B_Slingload_01_Fuel_F
+				{
+					cost = 300;
+					requirements[] = {};
+				};
+				// Huron Repair Container.
+				class B_Slingload_01_Repair_F
+				{
+					cost = 1000;
+					requirements[] = {};
+				};
+				// Huron Ammo Container.
+				class B_Slingload_01_Ammo_F
+				{
+					cost = 2500;
+					requirements[] = {};
+				};
+			};
+		};
+		class EAST // --- assets available for OPFOR
+		{
+			class Infantry
+			{
+				// Rifleman.
+				class O_T_Soldier_F			// --- Asset class name
+				{
+					cost = 100;				// --- Command Points required
+					// --- dispositions required:
+					//	"A" = airstrip, 
+					//	"H" = helipad, 
+					//	"W" = water (harbor).
+					requirements[] = {};	
+				};
+				// Crewman.
+				class O_T_Crew_F
+				{
+					cost = 100;
+					requirements[] = {};
+				};
+				// Helicopter Pilot.
+				class O_T_Helipilot_F
+				{
+					cost = 100;
+					requirements[] = {};
+				};
+				// Grenadier.
+				class O_T_Soldier_GL_F
+				{
+					cost = 125;
+					requirements[] = {};
+				};
+				// Combat Life Saver.
+				class O_T_Medic_F
+				{
+					cost = 125;
+					requirements[] = {};
+				};
+				// Autorifleman.
+				class O_T_Soldier_AR_F
+				{
+					cost = 150;
+					requirements[] = {};
+				};
+				// Ammo Bearer.
+				class O_T_Soldier_A_F
+				{
+					cost = 150;
+					requirements[] = {};
+				};
+				// Marksman.
+				class O_T_soldier_M_F // s.
+				{
+					cost = 150;
+					requirements[] = {};
+				};
+				// Repair Specialist.
+				class O_T_Soldier_Repair_F
+				{
+					cost = 200;
+					requirements[] = {};
+				};
+				// Heavy Gunner.
+				class O_HeavyGunner_F // Desert. No Tropic Variant !
+				{
+					cost = 200;
+					requirements[] = {};
+				};
+				// Rifleman (AT).
+				class O_T_Soldier_LAT_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Rifleman (Heavy AT).
+				class O_T_Soldier_HAT_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Missile Specialist (AT).
+				class O_T_Soldier_AT_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Missile Specialist (AA).
+				class O_T_Soldier_AA_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Sharpshooter.
+				class O_Sharpshooter_F // Desert. No Tropic Variant !
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Sniper.
+				class O_T_Sniper_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+			};
+			class Vehicles
+			{
+				// Zamak (Passanger, Open).
+				class O_T_Truck_02_transport_F
+				{
+					cost = 600;
+					requirements[] = {};
+				};
+				// Zamak (Medical).
+				class O_T_Truck_02_medical_F
+				{
+					cost = 750; // 500+250.
+					requirements[] = {};
+				};
+				// Zamak (Fuel).
+				class O_T_Truck_02_fuel_F
+				{
+					cost = 800; // 500+300.
+					requirements[] = {};
+				};
+				// Tempest (Repair).
+				class O_T_Truck_03_Repair_ghex_F
+				{
+					cost = 1500; // 500+1000.
+					requirements[] = {};
+				};
+				// Tempest (Ammo).
+				class O_T_Truck_03_ammo_ghex_F
+				{
+					cost = 3000; // 500+2500.
+					requirements[] = {};
+				};
+						
+				// Quad Bike.
+				class O_T_Quadbike_01_ghex_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Qilin (Unarmed).
+				class O_T_LSV_02_unarmed_F
+				{
+					cost = 300;
+					requirements[] = {};
+				};
+				// Qilin (HMG).
+				class O_T_LSV_02_armed_F
+				{
+					cost = 750;
+					requirements[] = {};
+				};
+				// Qilin (AT).
+				class O_T_LSV_02_AT_F
+				{
+					cost = 1250;
+					requirements[] = {};
+				};
+				
+				// Ifrit (Unarmed).
+				class O_T_MRAP_02_ghex_F
+				{
+					cost = 800;
+					requirements[] = {};
+				};
+				// Ifrit (HMG).
+				class O_T_MRAP_02_hmg_ghex_F
+				{
+					cost = 1600;
+					requirements[] = {};
+				};
+				// Ifrit (GMG).
+				class O_T_MRAP_02_gmg_ghex_F
+				{
+					cost = 1800;
+					requirements[] = {};
+				};
+				
+				// ~AMV-7 Marshall.
+				class O_T_APC_Wheeled_02_rcws_v2_ghex_F
+				{
+					cost = 4000;
+					requirements[] = {};
+				};
+				// ~IFV-6c Panther.
+				class O_T_APC_Tracked_02_cannon_ghex_F
+				{
+					cost = 4500;
+					requirements[] = {};
+				};
+				// ~IFV-6a Cheetah.
+				class O_T_APC_Tracked_02_AA_ghex_F
+				{
+					cost = 5500;
+					requirements[] = {};
+				};
+				// ~Slammer.
+				class O_T_MBT_02_cannon_ghex_F
+				{
+					cost = 9500;
+					requirements[] = {};
+				};
+				// ~Scorcher.
+				class O_T_MBT_02_arty_ghex_F
+				{
+					cost = 13000;
+					requirements[] = {};
+				};
+			};
+			class Aircraft
+			{
+				// Caesar BTT.
+				class C_Plane_Civil_01_F
+				{
+					cost = 1000;
+					requirements[] = { "A" };
+				};
+				// Orca (Unarmed).
+				class O_Heli_Light_02_unarmed_F
+				{
+					cost = 2250;
+					requirements[] = { "H" };
+				};
+				// Orca.
+				class O_Heli_Light_02_dynamicLoadout_F
+				{
+					cost = 2750;
+					requirements[] = { "H" };
+				};
+				// Taru (Empty).
+				class O_Heli_Transport_04_F
+				{
+					cost = 2500;
+					requirements[] = { "H" };
+				};
+				// Taru (Bench).
+				class O_Heli_Transport_04_bench_F
+				{
+					cost = 3000;
+					requirements[] = { "H" };
+				};
+				// Taru (Passanger).
+				class O_Heli_Transport_04_covered_F
+				{
+					cost = 3500;
+					requirements[] = { "H" };
+				};
+				// Taru (Medical).
+				class O_Heli_Transport_04_medevac_F
+				{
+					cost = 3500;
+					requirements[] = { "H" };
+				};
+				// Kajman.
+				class O_Heli_Attack_02_dynamicLoadout_F
+				{
+					cost = 6000;
+					requirements[] = { "H" };
+				};
+				// Neophrone.
+				class O_Plane_CAS_02_dynamicLoadout_F
+				{
+					cost = 25000;
+					requirements[] = { "A" };
+				};
+				// Shikra.
+				class O_Plane_Fighter_02_F
+				{
+					cost = 35000;
+					requirements[] = { "A" };
+				};
+				// ~Darter.
+				class O_UAV_01_F
+				{
+					cost = 200;
+					requirements[] = {};
+				};
+				// ~Pelican.
+				class O_UAV_06_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// ~MQ-4A Greyhawk.
+				class O_UAV_02_dynamicLoadout_F
+				{
+					cost = 3500;
+					requirements[] = { "A" };
+				};
+			};
+			class Naval
+			{
+				class O_T_Boat_Transport_01_F
+				{
+					cost = 50;
+					requirements[] = { "W" };
+				};
+				class C_Scooter_Transport_01_F
+				{
+					cost = 150;
+					requirements[] = { "W" };
+				};
+				class C_Boat_Transport_02_F
+				{
+					cost = 200;
+					requirements[] = { "W" };
+				};
+				class C_Boat_Civil_01_F
+				{
+					cost = 300;
+					requirements[] = { "W" };
+				};
+				class O_T_Boat_Armed_01_hmg_F
+				{
+					cost = 750;
+					requirements[] = { "W" };
+				};
+				class O_SDV_01_F
+				{
+					cost = 900;
+					requirements[] = { "W" };
+				};
+			};
+			class Defences
+			{
+				// Sandbag (Round). -- Is BUGGED by B.I.S.
+//				class Land_BagFence_01_round_green_F
+//				{
+//					cost = 10;
+//					requirements[] = {};
+//				};
+				// Sandbag (Long).
+				class Land_BagFence_01_long_green_F
+				{
+					cost = 10;
+					requirements[] = {};
+				};
+				// Sandbag (Short).
+				class Land_BagFence_01_short_green_F
+				{
+					cost = 5;
+					requirements[] = {};
+				};
+				// Sandbag (Corner). -- Is BUGGED by B.I.S.
+//				class Land_BagFence_01_corner_green_F
+//				{
+//					cost = 5;
+//					requirements[] = {};
+//				};
+				// Mk30 HMG.
+				class O_HMG_01_high_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Mk32 GMG.
+				class O_GMG_01_high_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// AT.
+				class O_static_AT_F
+				{
+					cost = 500;
+					requirements[] = {};
+				};
+				// AA.
+				class O_static_AA_F
+				{
+					cost = 500;
+					requirements[] = {};
+				};
+				// Mortar.
+				class O_Mortar_01_F
+				{
+					cost = 2000;
+					requirements[] = {};
+				};
+				// Radar.
+				class O_Radar_System_02_F
+				{
+					cost = 5000;
+					requirements[] = {};
+				};
+				// SAM.
+				class O_SAM_System_04_F
+				{
+					cost = 20000;
+					requirements[] = {};
+				};
+			};
+			class Gear
+			{
+				// Uniforms.
+				class Box_CSAT_Uniforms_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Support.
+				class Box_East_Support_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Equipment.
+				class Box_CSAT_Equip_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Basic Ammo.
+				class Box_T_East_Ammo_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Grenades.
+				class Box_East_Grenades_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Basic Weapons.
+				class Box_T_East_Wps_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Explosives.
+				class Box_East_AmmoOrd_F
+				{
+					cost = 50;
+					requirements[] = {};
+				};
+				// Launchers.
+				class Box_East_WpsLaunch_F
+				{
+					cost = 75;
+					requirements[] = {};
+				};
+				// Special Weapons.
+				class Box_T_East_WpsSpecial_F
+				{
+					cost = 75;
+					requirements[] = {};
+				};
+				// Supply Box.
+				class O_supplyCrate_F
+				{
+					cost = 75;
+					requirements[] = {};
+				};
+
+				// Vehicle Ammo.
+//				class Box_NATO_AmmoVeh_F
+//				{
+//					cost = 2000;
+//					requirements[] = {};
+//				};
+
+				// Huron Cargo Container.
+				class plp_ct_ContPlainOlive
+				{
+					cost = 100;
+					requirements[] = {};
+				};
+				// Huron Cargo Container.
+				class B_Slingload_01_Cargo_F
+				{
+					cost = 150;
+					requirements[] = {};
+				};
+				// Huron Medical Container.
+				class B_Slingload_01_Medevac_F
+				{
+					cost = 250;
+					requirements[] = {};
+				};
+				// Huron Fuel Container.
+				class B_Slingload_01_Fuel_F
+				{
+					cost = 300;
+					requirements[] = {};
+				};
+				// Huron Repair Container.
+				class B_Slingload_01_Repair_F
+				{
+					cost = 1000;
+					requirements[] = {};
+				};
+				// Huron Ammo Container.
+				class B_Slingload_01_Ammo_F
+				{
+					cost = 2500;
+					requirements[] = {};
+				};
+			};
+		};
+	};
+};

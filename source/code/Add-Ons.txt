@@ -1,0 +1,18 @@
+// These add-ons are stored here because this stupid Arma's editor replaces 
+// them after each mission save. They must be copy-pasted from here to the 
+// 'mission.sqm' file manually. Bohemia Interective, why can not you make 
+// even such a simple functionality work correctly ?! Shame.
+
+addons[]=
+{
+	// ...
+	
+	// Custom Add-Ons.
+	"AGC",				// AGC - Advanced Garbage Collector.
+	"MCA_CargoManager",	// Cargo Manager.
+	"cba_main",			// CBA_A3.
+	"BaBe_EM",			// Enhanced Movement.
+	"emr_main",			// Enhanced Movement Rework.
+	"plp_containers",	// PLP Containers.
+	"MCA_VehicleTowing"	// Vehicle Towing.
+};

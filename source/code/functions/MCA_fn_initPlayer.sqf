@@ -2,16 +2,8 @@
 
 params ["_unit", "_didJIP"];
 
-//DEBUG.
-sleep 15;
-systemChat "1"
-sleep 15;
-systemChat "2"
-sleep 15;
-systemChat "3"
-sleep 15;
-systemChat "4"
-systemChat format ["Initialization of a player: %1, JIP=%2.", _unit, _didJIP]; //TODO
+// DEBUG.
+diag_log format ["In MCA_fn_initPlayer: _unit=%1, _didJIP=%2, time is %3.", _unit, _didJIP, time];
 
 removeAllWeapons _unit;
 _unit removeWeapon "NVGoggles";
@@ -37,3 +29,6 @@ if (side _unit == east) then
 	_unit addUniform "U_O_T_Soldier_F";
 	_unit addWeapon "NVGoggles";
 };
+
+// DEBUG.
+diag_log format ["MCA_fn_initPlayer ends: _unit=%1, HMD=%2, time is %3.", _unit, hmd _unit, time];

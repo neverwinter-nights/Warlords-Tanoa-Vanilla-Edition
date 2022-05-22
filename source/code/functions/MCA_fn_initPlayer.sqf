@@ -1,8 +1,17 @@
 // MCA_fn_initPlayer.sqf.
 
-params ["_unit"];
+params ["_unit", "_didJIP"];
 
-systemChat format ["Initialization of a player: %1.", _unit]; //TODO
+//DEBUG.
+sleep 15;
+systemChat "1"
+sleep 15;
+systemChat "2"
+sleep 15;
+systemChat "3"
+sleep 15;
+systemChat "4"
+systemChat format ["Initialization of a player: %1, JIP=%2.", _unit, _didJIP]; //TODO
 
 removeAllWeapons _unit;
 _unit removeWeapon "NVGoggles";

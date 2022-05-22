@@ -2,6 +2,10 @@
 
 params ["_unit"];
 
+systemChat format ["_unit=%1", _unit]; //TODO
+waitUntil { !isNull _unit };
+systemChat format ["Initialization of a player: %1.", _unit]; //TODO
+
 removeAllWeapons _unit;
 _unit removeWeapon "NVGoggles";
 _unit removeWeapon "Binocular";

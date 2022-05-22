@@ -1209,3 +1209,19 @@ class CfgWLRequisitionPresets
 		};
 	};
 };
+
+class CfgFunctions
+{
+	class MCA // Tag.
+	{
+		class Warlords // Category.
+		{
+			// MCA_fnc_initPlayer.
+			class initPlayer // Function name.
+			{
+				// Source file path will be: "<ROOT>\<file>".
+				file = "functions\MCA_fn_initPlayer.sqf";
+			};
+		};
+	};
+};

@@ -7,11 +7,8 @@ _player addEventHandler
 	"Respawn", 
 	{
 		params ["_unit", "_killer"];
-		[_unit, _didJIP] call MCA_fn_initPlayer;
-		_unit addAction [ "Init-After-Respawn", { systemChat "Init"; } ]; //DEBUG.
+		[_unit, _didJIP] call MCA_fnc_initPlayer;
 	}
 ];
 
-[_player, _didJIP] call MCA_fn_initPlayer;
-
-_player addAction [ "Init-First", { systemChat "Init"; } ]; //DEBUG.
+[_player, _didJIP] call MCA_fnc_initPlayer;

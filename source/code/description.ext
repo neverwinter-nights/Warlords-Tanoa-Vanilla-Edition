@@ -1,8 +1,8 @@
 author = "McArcher";
 onLoadName		= "Warlords Tanoa: Vanilla";
-onLoadMission	= "Warlords Tanoa: Vanilla Edition (v1.2-dev-3)";
+onLoadMission	= "Warlords Tanoa: Vanilla Edition (v1.2)";
 loadScreen		= "images\load_screen_1024x512.paa";
-briefingName = "Warlords Tanoa: Vanilla Edition (v1.2-dev-3)";
+briefingName = "Warlords Tanoa: Vanilla Edition (v1.2)";
 overviewText="An extended tropical variant of the Warlords mission. Uses vanilla vehicles.";
 overviewTextLocked="An extended tropical variant of the Warlords mission. Uses vanilla vehicles.";
 overViewPicture="images\load_screen_1024x512.paa";

@@ -206,13 +206,13 @@ class ScenarioData
 		maxPlayers=40;
 	};
 	wreckManagerMode=1;
-	wreckLimit=999999;
-	wreckRemovalMinTime=3600;
+	wreckLimit=1024;
+	wreckRemovalMinTime=1800;
 	wreckRemovalMaxTime=3600;
 	corpseManagerMode=1;
-	corpseLimit=999999;
-	corpseRemovalMinTime=3600;
-	minPlayerDistance=999999;
+	corpseLimit=2048;
+	corpseRemovalMinTime=1800.1;
+	minPlayerDistance=3000;
 };
 class CustomAttributes
 {
@@ -465,7 +465,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=150;
+							value=100;
 						};
 					};
 				};
@@ -2638,7 +2638,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11760.554,1.85,2240.7229};
+				position[]={11772.625,1.85,2260.25};
 			};
 			id=24;
 			type="ModuleWLSector_F";
@@ -41169,12 +41169,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11574.241,9.701623,2031.741};
+				position[]={11574.241,9.7016296,2031.741};
 				angles[]={0,0,6.1848359};
 			};
 			id=1;
 			type="ModuleWLBase_F";
-			atlOffset=0.81799316;
+			atlOffset=0.81799984;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41211,7 +41211,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=150;
+							value=100;
 						};
 					};
 				};
